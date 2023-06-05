@@ -21,28 +21,28 @@
  */
 -->
 <configuration>
-   <property>
-      <name>hbase.rootdir</name>
-      <value>hdfs://172.17.0.3:9000/user/hdfs/hbase</value>
-   </property>
-   <property>
-    <name>hbase.zookeeper.quorum</name>
-    <value>172.17.0.2</value>
-    <description>The directory shared by RegionServers.
-    </description>
-  </property>
     <property>
-    <name>hbase.master.hostname</name>
-    <value>172.17.0.3</value>
-    <!-- master.local is the DNS name in my network pointing to hbase master -->
-  </property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://172.17.0.3:9000/user/hdfs/hbase</value>
+    </property>
     <property>
-    <name>hbase.regionserver.hostname</name>
-    <value>172.17.0.3</value>
-  </property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>172.17.0.2</value>
+        <description>The directory shared by RegionServers.
+        </description>
+    </property>
+    <property>
+        <name>hbase.master.hostname</name>
+        <value>172.17.0.3</value>
+        <!-- master.local is the DNS name in my network pointing to hbase master -->
+    </property>
+    <property>
+        <name>hbase.regionserver.hostname</name>
+        <value>172.17.0.3</value>
+    </property>
 
     <property>
-    <name>hbase.table.sanity.checks</name>
-    <value>false</value>
-  </property>
+        <name>hbase.table.sanity.checks</name>
+        <value>false</value>
+    </property>
 </configuration>

@@ -14,40 +14,39 @@
 -->
 <configuration>
 
-<!-- Site specific YARN configuration properties -->
+    <!-- Site specific YARN configuration properties -->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>172.17.0.3</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.hostname</name>
+        <value>172.17.0.3</value>
+    </property>
 
-   <property>
-                <name>yarn.resourcemanager.hostname</name>
-                <value>172.17.0.3</value>
-   </property>
-   <property>
-                <name>yarn.nodemanager.hostname</name>
-                <value>172.17.0.3</value>
-   </property>
-
-   <property>
-                <name>yarn.nodemanager.aux-services</name>
-                <value>mapreduce_shuffle</value>
-   </property>
-   <property>
-               <name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name> 
-                <value>org.apache.hadoop.mapred.ShuffleHandler</value>
-   </property>
- <property>
-   <name>yarn.nodemanager.vmem-check-enabled</name>
-    <value>false</value>
-    <description>Whether virtual memory limits will be enforced for containers</description>
-  </property>
-<property> 
-    <name>yarn.scheduler.minimum-allocation-mb</name> 
-    <value>1228</value>
-</property>
-<property> 
-    <name>yarn.scheduler.maximum-allocation-mb</name> 
-    <value>9830</value>
-</property>
-<property> 
-    <name>yarn.nodemanager.resource.memory-mb</name> 
-    <value>9830</value>
-</property>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>
+        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
+        <description>Whether virtual memory limits will be enforced for containers</description>
+    </property>
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>1228</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>9830</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>9830</value>
+    </property>
 </configuration>
