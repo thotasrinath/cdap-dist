@@ -1,0 +1,9 @@
+export JAVA_HOME=/usr/local/openjdk-8
+export HADOOP_HOME=/opt/hadoop/hadoop-2.9.2
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export HADOOP_YARN_HOME=$HADOOP_HOME
+export HADOOP_USER_NAME=hdfs
+export PATH=$JAVA_HOME/bin:$PATH:$HADOOP_HOME/bin
+export CLASSPATH=$CLASSPATH:/etc/cdap/conf:/etc/cdap/security:/etc/hadoop/conf:/opt/hadoop/hbase-1.2.0/lib/*.jar:/opt/hadoop/hbase-1.2.0/conf:/opt/hadoop/hadoop-2.9.2/etc/hadoop
