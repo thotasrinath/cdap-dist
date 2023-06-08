@@ -14,9 +14,8 @@ sudo docker build -t cdap-ui .
 sudo docker run -h 172.17.0.7 --ip 172.17.0.7 -it cdap-ui /bin/bash
 ```
 
-
 Kafka properties can be added to cdap-site.xml. They should always start with kafka.server
 
 
-
+    
 
